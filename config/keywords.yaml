@@ -1,0 +1,280 @@
+compliant:
+  regex: "\\bcompliant\\b"
+  score: 1.9
+  valence: "undefined"
+engaged:
+  regex: "\\b(?:engaged|engagement|engages)\\b"
+  score: 2.3
+  valence: "privileging"
+managed:
+  regex: "\\b(?:managed|bmanagement|bmanages)\\b"
+  score: 2.3
+  valence: "privileging"
+involved:
+  regex: "\\b(?:involved|binvolvement)\\b"
+  score: 2.3
+  valence: "privileging"
+pleasant:
+  regex: "\\bpleasant\\b"
+  score: 1.6
+  valence: "privileging"
+dressed:
+  regex: "\\b(?:appropriately dressed|well dressed)\\b"
+  score: 1.6
+  valence: "privileging"
+groomed:
+  regex: "\\b(?:groomed| well groomed| appropriately groomed)\\b"
+  score: 1.6
+  valence: "privileging"
+happy:
+  regex: "\\bhappy\\b"
+  score: 1
+  valence: "privileging"
+friendly:
+  regex: "\\bfriendly\\b"
+  score: 1.3
+  valence: "privileging"
+cordial:
+  regex: "\\bcordial\\b"
+  score: 1.6
+  valence: "privileging"
+motivated:
+  regex: "\\bmotivated\\b"
+  score: 1.6
+  valence: "privileging"
+charming:
+  regex: "\\bcharming\\b"
+  score: 1
+  valence: "privileging"
+inspiring:
+  regex: "\\binspiring\\b"
+  score: 1.6
+  valence: "privileging"
+kind:
+  regex: "\\bkind\\b"
+  score: 1.3
+  valence: "privileging"
+good insight:
+  regex: "\\bgood insight\\b"
+  score: 2.3
+  valence: "privileging"
+knowledgeable:
+  regex: "\\bknowledgeable\\b"
+  score: 2.3
+  valence: "privileging"
+informed:
+  regex: "\\binformed\\b"
+  score: 2.3
+  valence: "privileging"
+skilled:
+  regex: "\\bskilled\\b"
+  score: 2.3
+  valence: "privileging"
+support_system:
+  regex: "\\bhealthy\\b"
+  score: 2.6
+  valence: "privileging"
+employed:
+  regex: "\\bemployed\\b"
+  score: 3
+  valence: "privileging"
+healthy:
+  regex: "\\bhealthy\\b"
+  score: 2
+  valence: "privileging"
+disciplined:
+  regex: "\\bdisciplined\\b"
+  score: 1
+  valence: "privileging"
+active:
+  regex: "\\bactive\\b"
+  score: 3
+  valence: "privileging"
+educated:
+  regex: "\\beducated\\b"
+  score: 1.6
+  valence: "privileging"
+willing:
+  regex: "\\bwilling\\b"
+  score: 2
+  valence: "privileging"
+adamant:
+  regex: "\\b(?:adamant|adamantly)\\b"
+  score: 2.8
+  valence: "stigmatazing"
+aggressive:
+  regex: "\\baggressive\\b"
+  score: 2
+  valence: "stigmatizing"
+agitated:
+  regex: "\\bagitated\\b"
+  score: 2.4
+  valence: "stigmatizing"
+angry:
+  regex: "\\bangry\\b"
+  score: 2
+  valence: "stigmatizing"
+anxious:
+  regex: "\\b(?:anxious|anxiety)\\b"
+  score: 2.8
+  valence: "stigmatizing"
+apparently:
+  regex: "\\bapparently\\b"
+  score: 2
+  valence: "stigmatizing"
+appears_to_be:
+  regex: "\\bappears to be\\b"
+  score: 3
+  valence: "stigmatizing"
+argumentative:
+  regex: "\\bargumentative\\b"
+  score: 1
+  valence: "stigmatizing"
+believes:
+  regex: "\\bbelieves\\b"
+  score: 3
+  valence: "stigmatizing"
+challenging:
+  regex: "\\bchallenging\\b"
+  score: 1.6
+  valence: "stigmatizing"
+claim:
+  regex: "\\b(?:claims|claiming)\\b"
+  score: 2.6
+  valence: "stigmatizing"
+combative:
+  regex: "\\bcombative\\b"
+  score: 2
+  valence: "stigmatizing"
+complain:
+  regex: "\\b(?:complains|complained|complaining)\\b"
+  score: 3
+  valence: "stigmatizing"
+confront:
+  regex: "\\bconfront\\b"
+  score: 1.6
+  valence: "stigmatizing"
+defensive:
+  regex: "\\bdefensive\\b"
+  score: 2
+  valence: "stigmatizing"
+deny:
+  regex: "\\b(?:denies|denied|denying|in denial)\\b"
+  score: 1.4
+  valence: "stigmatizing"
+difficult:
+  regex: "\\bdifficult\\b"
+  score: 1.4
+  valence: "stigmatizing"
+dirty:
+  regex: "\\bdirty\\b"
+  score: 1.6
+  valence: "stigmatizing"
+endorse:
+  regex: "\\b(?:endorsing|endorsed|endorse)\\b"
+  score: 3.4
+  valence: "stigmatizing"
+exaggerate:
+  regex: "\\bexaggerate\\b"
+  score: 1.2
+  valence: "stigmatizing"
+fail:
+  regex: "\\bfail\\b"
+  score: 1
+  valence: "stigmatizing"
+hysterical:
+  regex: "\\bhysterical\\b"
+  score: 1.2
+  valence: "stigmatizing"
+insist:
+  regex: "\\b(?:insist|insisting|insists)\\b"
+  score: 2
+  valence: "stigmatizing"
+irritable:
+  regex: "\\birritable\\b"
+  score: 2.2
+  valence: "stigmatizing"
+lazy:
+  regex: "\\blazy\\b"
+  score: 1
+  valence: "stigmatizing"
+nonadherent:
+  regex: "\\b(?:nonadherent|non-adherent)\\b"
+  score: 2.8
+  valence: "stigmatizing"
+noncooperative:
+  regex: "\\b(?:noncooperative|not cooperate)\\b"
+  score: 1.6
+  valence: "stigmatizing"
+refuse:
+  regex: "\\b(?:refuse|refuses|refused)\\b"
+  score: 2
+  valence: "stigmatizing"
+reports:
+  regex: "\\b(?:reports|reporting|reportedly)\\b"
+  score: 3
+  valence: "stigmatizing"
+resist:
+  regex: "\\bresist\\b"
+  score: 1.6
+  valence: "stigmatizing"
+say:
+  regex: "\\b(?:says|saying)\\b"
+  score: 2.4
+  valence: "stigmatizing"
+sedentary:
+  regex: "\\bsedentary\\b"
+  score: 2.4
+  valence: "stigmatizing"
+inactive:
+  regex: "\\binactive\\b"
+  score: 2.6
+  valence: "stigmatizing"
+supposedly:
+  regex: "\\bsupposedly\\b"
+  score: 1
+  valence: "stigmatizing"
+tell:
+  regex: "\\b(?:tells me|tells|told)\\b"
+  score: 3.2
+  valence: "stigmatizing"
+undisciplined:
+  regex: "\\bundisciplined\\b"
+  score: 1
+  valence: "stigmatizing"
+ungroomed:
+  regex: "\\bungroomed\\b"
+  score: 1.8
+  valence: "stigmatizing"
+uninformed:
+  regex: "\\buninformed\\b"
+  score: 1
+  valence: "stigmatizing"
+unkempt:
+  regex: "\\bunkempt\\b"
+  score: 2
+  valence: "stigmatizing"
+unmotivated:
+  regex: "\\bunmotivated\\b"
+  score: 1
+  valence: "stigmatizing"
+unpleasant:
+  regex: "\\bunpleasant\\b"
+  score: 1
+  valence: "stigmatizing"
+unreliable:
+  regex: "\\bunreliable\\b"
+  score: 1.2
+  valence: "stigmatizing"
+unskilled:
+  regex: "\\bunskilled\\b"
+  score: 1.2
+  valence: "stigmatizing"
+unwilling:
+  regex: "\\bunwilling\\b"
+  score: 1.2
+  valence: "stigmatizing"
+quotations:
+  regex: '"[\\"“”][^"\\"“”]+[\\"“”]"'
+  score: 1.4
+  valence: "stigmatizing"

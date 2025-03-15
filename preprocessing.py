@@ -19,14 +19,28 @@ def chunkizer(text: str, config: dict, nchar=200) -> list[tuple]:
     return chunks
 
 
-def text_preprocessing(chunk, word):
+def text_preprocessing(chunk, word, config):
     """
     Creates inputs for LLMs. Returns text chunk with word appended at the beginning. 
     :param chunk: str
     :param word: str
+    :param config: dict
     :return: str
     """
-    preproc_text = f'Word used: {word}' + ' [...] ' + re.sub(r'  +', ' ',
+    word_config = config[word]
+    word_stigmatizing_score = word_config['stigmatizing_score']
+    word_privileging_score = word_config['privileging_score']
+    if word_stigmatizing_score==5:
+        range_text = 'either privileging or neutral. '
+    elif word_privileging_score==5:
+        range_text = 'either stigmatizing or neutral. '
+    else:
+        range_text = 'privileging, stigmatizing or neutral. '
+
+    explaination = f"""
+    This word can be {range_text} 
+    """
+    preproc_text = f'Word used: {word}. ' + range_text + ' [...] ' + re.sub(r'  +', ' ',
                                                              unicodedata.normalize('NFKD', chunk.strip().strip(
                                                                  '.'))).strip() + ' [...]'
     return preproc_text

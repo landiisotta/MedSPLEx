@@ -22,7 +22,7 @@ pleasant:
   regex: "\\b(?:pleasant|unpleasant)\\b"
   privileging_score: 1.6
   stigmatizing_score: 1
-  valence: "undefined"
+  valence: "ambiguous"
 dressed:
   regex: "\\b(?:appropriately dressed|well dressed)\\b"
   privileging_score: 1.6
@@ -52,7 +52,7 @@ motivated:
   regex: "\\b(?:motivated|unmotivated)\\b"
   privileging_score: 1.6
   stigmatizing_score: 1
-  valence: "undefined"
+  valence: "privileging"
 charming:
   regex: "\\bcharming\\b"
   privileging_score: 1
@@ -68,7 +68,7 @@ kind:
   privileging_score: 1.3
   stigmatizing_score: 5
   valence: "neutral"
-good insight:
+good_insight:
   regex: "\\bgood insight\\b"
   privileging_score: 2.3
   stigmatizing_score: 5
@@ -82,12 +82,12 @@ informed:
   regex: "\\b(?:informed|uninformed)\\b"
   privileging_score: 2.3
   stigmatizing_score: 1
-  valence: "undefined"
+  valence: "neutral"
 skilled:
   regex: "\\b(?:skilled|unskilled)\\b"
   privileging_score: 2.3
   stigmatizing_score: 1.2
-  valence: "undefined"
+  valence: "neutral"
 support_system:
   regex: "\\bsupport system\\b"
   privileging_score: 2.6
@@ -103,16 +103,11 @@ healthy:
   privileging_score: 2
   stigmatizing_score: 5
   valence: "ambiguous"
-disciplined:
-  regex: "\\bdisciplined\\b"
-  privileging_score: 1
-  stigmatizing_score: 5
-  valence: "undefined"
 active:
   regex: "\\b(?:active|inactive)\\b"
   privileging_score: 3
   stigmatizing_score: 2.6
-  valence: "undefined"
+  valence: "neutral"
 educated:
   regex: "\\beducated\\b"
   privileging_score: 1.6
@@ -292,9 +287,9 @@ tell:
   privileging_score: 5
   stigmatizing_score: 3.2
   valence: "undefined"
-undisciplined:
-  regex: "\\bundisciplined\\b"
-  privileging_score: 5
+disciplined:
+  regex: "\\b(?:disciplined|undisciplined)\\b"
+  privileging_score: 1
   stigmatizing_score: 1
   valence: "undefined"
 unkempt:

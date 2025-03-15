@@ -22,3 +22,4 @@ def _create_sub_examples(df):
                                  valences=[ex.label_class for ex in df.itertuples()])]
     sub_examples = [x.with_inputs('words', 'chunks') for x in sub_examples]
     return sub_examples
+

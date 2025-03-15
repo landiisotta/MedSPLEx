@@ -1,5 +1,5 @@
 compliant:
-  regex: "\\bcompliant\\b"
+  regex: "\\b(?:compliant|noncompliant|noncompliance|poor compliance)\\b"
   score: 1.9
   valence: "undefined"
 engaged:

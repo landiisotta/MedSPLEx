@@ -17,16 +17,38 @@ class SPLangClassification(dspy.Signature):
 # keyword matching labels or a LM.
 class SPLangProgram(dspy.Module):
     def __init__(self):
-        self.label = dspy.Prediction(SPLangClassification)
+        self.label = dspy.Predict(SPLangClassification)
         self.valence_dict = yaml.safe_load(open('config/keywords.yaml'))
 
     def forward(self, word, chunk):
         try:
             valence = self.valence_dict[word]
         except KeyError:
-            logging.ERROR("Word valence not found, Please update the keyword-valence file.")
+            logging.ERROR("Word valence not found, please update the keywords file.")
             return
         if valence == 'ambiguous':
             return self.label(word=word, chunk=chunk)
         else:
-            return self.Predict(valence=self.valence_dict[word]['valence'])
+            return self.Prediction(valence=self.valence_dict[word]['valence'])
+
+
+# Program reading in a text chunk and returning the valence either using
+# keyword matching labels or a LM.
+class F1SPLangProgram(dspy.Module):
+    def __init__(self):
+        self.label = dspy.Predict(SPLangClassification)
+        self.valence_dict = yaml.safe_load(open('config/keywords.yaml'))
+
+    def forward(self, words, chunks):
+        preds = []
+        for word, chunk in zip(words, chunks):
+            try:
+                valence = self.valence_dict[word]
+            except KeyError:
+                logging.ERROR("Word valence not found, please update the keywords file.")
+                return
+            if valence == 'ambiguous':
+                preds.append(self.label(word=word, chunk=chunk).valence)
+            else:
+                preds.append(self.valence_dict[word]['valence'])
+        return dspy.Prediction(valences=preds)

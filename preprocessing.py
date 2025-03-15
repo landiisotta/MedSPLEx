@@ -37,10 +37,10 @@ def text_preprocessing(chunk, word, config):
     else:
         range_text = 'privileging, stigmatizing or neutral. '
 
-    explaination = f"""
+    explanation = f"""
     This word can be {range_text} 
     """
-    preproc_text = f'Word used: {word}. ' + range_text + ' [...] ' + re.sub(r'  +', ' ',
+    preproc_text = f'Word used: {word}. ' + explanation + ' [...] ' + re.sub(r'  +', ' ',
                                                              unicodedata.normalize('NFKD', chunk.strip().strip(
                                                                  '.'))).strip() + ' [...]'
     return preproc_text

@@ -18,7 +18,7 @@ class SPLangClassification(dspy.Signature):
 class SPLangProgram(dspy.Module):
     def __init__(self):
         self.label = dspy.Prediction(SPLangClassification)
-        self.valence_dict = yaml.safe_load(open('config/word-list.yaml'))
+        self.valence_dict = yaml.safe_load(open('config/keywords.yaml'))
 
     def forward(self, word, chunk):
         try:

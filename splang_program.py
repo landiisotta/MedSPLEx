@@ -6,7 +6,7 @@ import logging
 
 # Stigmatizing and Privileging Language Classification Signature
 class SPLangClassification(dspy.Signature):
-    f"""{yaml.safe_load(open("config/signature_docstring.yaml", 'r'))['docstring']}"""
+    """Classify whether the word indicated at the beginning of the chunk extracted from a clinical note carries a privileging, stigmatizing, or neutral valence in the context provided."""
 
     word: str = dspy.InputField()
     chunk: str = dspy.InputField()
@@ -22,14 +22,14 @@ class SPLangProgram(dspy.Module):
 
     def forward(self, word, chunk):
         try:
-            valence = self.valence_dict[word]
+            word_usage = self.valence_dict[word]['valence']
         except KeyError:
             logging.ERROR("Word valence not found, please update the keywords file.")
-            return
-        if valence == 'ambiguous':
+            return None
+        if word_usage == 'ambiguous':
             return self.label(word=word, chunk=chunk)
         else:
-            return self.Prediction(valence=self.valence_dict[word]['valence'])
+            return dspy.Prediction(valence=self.valence_dict[word]['valence'])
 
 
 # Program reading in a text chunk and returning the valence either using
@@ -43,11 +43,11 @@ class F1SPLangProgram(dspy.Module):
         preds = []
         for word, chunk in zip(words, chunks):
             try:
-                valence = self.valence_dict[word]
+                word_usage = self.valence_dict[word]
             except KeyError:
                 logging.ERROR("Word valence not found, please update the keywords file.")
                 return
-            if valence == 'ambiguous':
+            if word_usage == 'ambiguous':
                 preds.append(self.label(word=word, chunk=chunk).valence)
             else:
                 preds.append(self.valence_dict[word]['valence'])

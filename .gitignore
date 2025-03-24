@@ -1,3 +1,7 @@
 pipeline.ipynb
 dspy/
 .DS_Store
+data/
+*/__pycache__/
+*egg-info/
+

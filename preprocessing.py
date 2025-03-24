@@ -19,7 +19,7 @@ def chunkizer(text: str, config: dict, nchar=200) -> list[tuple]:
     return chunks
 
 
-def text_preprocessing(chunk, word, config=None):
+def text_preprocessing(chunk, word, text_col='text_preproc', config=None):
     """
     Creates inputs for LLMs. Returns text chunk with word appended at the beginning. 
     :param chunk: str
@@ -31,9 +31,9 @@ def text_preprocessing(chunk, word, config=None):
         word_config = config[word]
         word_stigmatizing_score = word_config['stigmatizing_score']
         word_privileging_score = word_config['privileging_score']
-        if word_stigmatizing_score==5:
+        if word_stigmatizing_score == 5:
             range_text = 'privileging or neutral'
-        elif word_privileging_score==5:
+        elif word_privileging_score == 5:
             range_text = 'stigmatizing or neutral'
         else:
             range_text = 'privileging, stigmatizing, or neutral'
@@ -41,7 +41,14 @@ def text_preprocessing(chunk, word, config=None):
         explanation = f""" This word can have a {range_text} meaning."""
     else:
         explanation = ''
-    preproc_text = f'Word used: {word}.' + explanation + ' [...] ' + re.sub(r'  +', ' ',
-                                                             unicodedata.normalize('NFKD', chunk.strip().strip(
-                                                                 '.'))).strip() + ' [...]'
+    if text_col == 'text_preproc':
+        preproc_text = f'Word used: {word}.' + explanation + ' [...] ' + re.sub(r'  +', ' ',
+                                                                                unicodedata.normalize('NFKD',
+                                                                                                      chunk.strip().strip(
+                                                                                                          '.'))).strip() + ' [...]'
+    else:
+        preproc_text = explanation + re.sub(r'  +', ' ',
+                                            unicodedata.normalize('NFKD',
+                                                                  chunk.strip().strip(
+                                                                      '.'))).strip()
     return preproc_text

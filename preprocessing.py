@@ -11,13 +11,15 @@ def chunkizer(text: str, config: dict, nchar=200) -> list[tuple]:
     """
     chunks = []
     for keyword in config.keys():
-        for match in re.finditer(keyword['regex'], text, re.IGNORECASE):
-            start = max(0, match.start() - nchar)
-            end = min(len(text), match.end() + nchar)
-            chunk = text[start:end]
-            chunks.append(Chunk(keyword=keyword, text=chunk))
+        try:
+            for match in re.finditer(config.get(keyword)['regex'], text, re.IGNORECASE):
+                start = max(0, match.start() - nchar)
+                end = min(len(text), match.end() + nchar)
+                chunk = text[start:end]
+                chunks.append(Chunk(keyword=keyword, text=chunk))
+        except Exception as e:
+            print(e)
     return chunks
-
 
 def text_preprocessing(chunk, word, text_col='text_preproc', config=None):
     """

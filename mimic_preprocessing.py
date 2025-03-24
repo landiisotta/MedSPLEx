@@ -62,10 +62,10 @@ def apply_text_processing(df: pd.DataFrame, config: dict) -> pd.DataFrame:
 
     def process_row(row):
         row["text_preproc"] = text_preprocessing(
-            row["text"], row["keyword"], text_col="text_preproc", config=config
+            row["text_raw"], row["keyword"], text_col="text_preproc", config=None
         )
         row["text"] = text_preprocessing(
-            row["text"], row["keyword"], text_col="text", config=config
+            row["text_raw"], row["keyword"], text_col="text", config=config
         )
         return row
 

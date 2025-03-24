@@ -170,7 +170,8 @@ challenging:
   valence: "ambiguous"
 claim:
   regex: "\\b(?:claims|claiming)\\b"
-  score: 2.6
+  privileging_score: 5
+  stigmatizing_score: 2.6
   valence: "undefined"
 combative:
   regex: "\\bcombative\\b"

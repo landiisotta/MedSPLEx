@@ -65,7 +65,8 @@ charming:
   valence: undefined
 claim:
   regex: \b(?:claims|claiming)\b
-  score: 2.6
+  privileging_score: 5
+  stigmatizing_score: 2.6
   valence: undefined
 combative:
   privileging_score: 5

@@ -83,17 +83,13 @@ COLOR_STIG = "#FC6B68"
 COLOR_NEUT = "#679CDF"
 COLOR_UNLABELED = "#040404"
 
-CONFIG_PATH = "config/keywords_updated.yaml"
-OUTPUT_FNAME = "dotplot_deid"
-
-
 def get_parser():
     """Returns the parser for all the args for run_ddqc function used via script/cli."""
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--config-path",
         "-i",
-        default="config/mimic_keywords.yaml",
+        default="config/keywords_updated.yaml",
         help="Path of the directory that contains the words config.",
     )
     parser.add_argument(
@@ -126,7 +122,7 @@ def dotplot_words_valence(config_path, output_path, plot_fname, save=True):
     valence_df["pattern"] = pd.Categorical(
         valence_df.index, categories=sorted(valence_df.index.unique()), ordered=True
     )
-    
+
     valence_df["pattern_index"] = valence_df["pattern"].map(DEID_ORDER_MAP)
 
     valence_df["color_privileging"] = valence_df["privileging_score"].apply(

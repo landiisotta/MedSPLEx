@@ -1,11 +1,9 @@
-import argparse
-import os
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from yaml import safe_load
+import argparse
 
 DEID_ORDER_MAP = {
     "dressed": 0,
@@ -128,8 +126,7 @@ def dotplot_words_valence(config_path, output_path, plot_fname, save=True):
     valence_df["pattern"] = pd.Categorical(
         valence_df.index, categories=sorted(valence_df.index.unique()), ordered=True
     )
-    # pattern_to_index = {pattern: i for i, pattern in enumerate(sorted_patterns)}
-
+    
     valence_df["pattern_index"] = valence_df["pattern"].map(DEID_ORDER_MAP)
 
     valence_df["color_privileging"] = valence_df["privileging_score"].apply(

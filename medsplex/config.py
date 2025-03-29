@@ -1,6 +1,52 @@
 import yaml
 import pandas as pd
 
+def create_config_from_scores(scores_path, keywords_path, cutoff, save=False,
+                              return_dict=False, config_path='config/score_config.yaml'):
+
+    scores = pd.read_csv(scores_path)
+    keywords = pd.read_csv(keywords_path)
+
+    # get mean scores
+    df = scores.groupby(['keyword', 'valence']).mean('score').reset_index()
+    # Pivot the DataFrame
+    pivot_df = df.pivot(index='keyword', columns='valence', values='score')
+    # Fill missing values with 5
+    pivot_df = pivot_df.fillna(5)
+    # Rename columns
+    pivot_df = pivot_df.rename(columns={
+        'stigmatizing': 'stigmatizing_score',
+        'privileging': 'privileging_score'
+    })
+
+    #cutoff
+    pivot_df = pivot_df[
+        (pivot_df['stigmatizing_score'] >= cutoff) |
+        (pivot_df['privileging_score'] >= cutoff)
+    ]
+
+    # Reset index if needed
+    pivot_df.reset_index(inplace=True)
+    pivot_df['regex']=""
+    for keyword in pivot_df.keyword:
+        regex = f'\\b(?:{"|".join(keywords.loc[keywords.keyword==keyword, "expression"].tolist())})\\b'
+        pivot_df.loc[pivot_df.keyword==keyword, 'regex'] = regex
+
+    config = {}
+    for index, row in pivot_df.iterrows():
+        config[row.keyword] = {
+            'regex':row.regex,
+            'privileging_score':row.privileging_score,
+            'stigmatizing_score':row.stigmatizing_score,
+            'valence':'undefined'
+        }
+
+    if save:
+        print(f'Saving config to {config_path}')
+        with open(config_path, 'w') as f:
+            yaml.dump(config, f)
+    return config if return_dict  else pivot_df
+
 def update_config_from_annotations(ann_path, config_path,
                                    keyword_column = 'keyword', label_column='label',
                                    new_config_path = None,

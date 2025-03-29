@@ -1,0 +1,316 @@
+active:
+  privileging_score: 3.0
+  regex: \b(?:active)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+adamant:
+  privileging_score: 5.0
+  regex: \b(?:adamant|adamantly)\b
+  stigmatizing_score: 2.25
+  valence: undefined
+adherence:
+  privileging_score: 3.3333333333333335
+  regex: \b(?:nonadherent|non-adherence|adherent)\b
+  stigmatizing_score: 2.5
+  valence: undefined
+aggressive:
+  privileging_score: 5.0
+  regex: \b(?:aggressive|aggression)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+agitated:
+  privileging_score: 5.0
+  regex: \b(?:agitated|agitate)\b
+  stigmatizing_score: 1.75
+  valence: undefined
+angry:
+  privileging_score: 5.0
+  regex: \b(?:angry)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+anxious:
+  privileging_score: 5.0
+  regex: \b(?:anxious|anxiety)\b
+  stigmatizing_score: 2.25
+  valence: undefined
+apparently:
+  privileging_score: 5.0
+  regex: \b(?:apparently)\b
+  stigmatizing_score: 2.25
+  valence: undefined
+appears_to_be:
+  privileging_score: 5.0
+  regex: \b(?:appears to be)\b
+  stigmatizing_score: 2.5
+  valence: undefined
+argumentative:
+  privileging_score: 5.0
+  regex: \b(?:argumentative)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+believes:
+  privileging_score: 5.0
+  regex: \b(?:believes)\b
+  stigmatizing_score: 2.5
+  valence: undefined
+challenging:
+  privileging_score: 5.0
+  regex: \b(?:challenging)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+charming:
+  privileging_score: 1.0
+  regex: \b(?:charming)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+claim:
+  privileging_score: 5.0
+  regex: \b(?:claims|claiming)\b
+  stigmatizing_score: 2.0
+  valence: undefined
+combative:
+  privileging_score: 5.0
+  regex: \b(?:combative|combat)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+complain:
+  privileging_score: 5.0
+  regex: \b(?:complains|complaint|complaining)\b
+  stigmatizing_score: 2.5
+  valence: undefined
+compliance:
+  privileging_score: 2.0
+  regex: \b(?:noncompliant|noncompliance|poor compliance|compliant)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+confront:
+  privileging_score: 5.0
+  regex: \b(?:confront|confrontation|confrontational)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+cordial:
+  privileging_score: 1.3333333333333333
+  regex: \b(?:cordial)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+defensive:
+  privileging_score: 5.0
+  regex: \b(?:defensive)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+deny:
+  privileging_score: 5.0
+  regex: \b(?:denies|denied|denial|in denial)\b
+  stigmatizing_score: 2.75
+  valence: undefined
+difficult:
+  privileging_score: 5.0
+  regex: \b(?:difficult)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+dirty:
+  privileging_score: 5.0
+  regex: \b(?:dirty)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+disciplined:
+  privileging_score: 1.0
+  regex: \b(?:undisciplined|lacks discipline|not disciplined|disciplined)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+dressed:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:appropriately dressed|well dressed)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+educated:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:educated)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+employed:
+  privileging_score: 3.0
+  regex: \b(?:employed)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+endorse:
+  privileging_score: 5.0
+  regex: \b(?:)\b
+  stigmatizing_score: 3.25
+  valence: undefined
+engage:
+  privileging_score: 2.3333333333333335
+  regex: \b(?:engage|engagement|engages)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+exaggerate:
+  privileging_score: 5.0
+  regex: \b(?:exaggerate)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+fail:
+  privileging_score: 5.0
+  regex: \b(?:fails|failed|failure)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+friendly:
+  privileging_score: 1.0
+  regex: \b(?:friendly)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+good_insight:
+  privileging_score: 2.3333333333333335
+  regex: \b(?:good_insight)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+groomed:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:ungroomed|not groomed|appriopriately groomed)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+happy:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:happy)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+healthy:
+  privileging_score: 2.0
+  regex: \b(?:healthy)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+hysterical:
+  privileging_score: 5.0
+  regex: \b(?:hysterical)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+inactive:
+  privileging_score: 5.0
+  regex: \b(?:inactive)\b
+  stigmatizing_score: 2.25
+  valence: undefined
+informed:
+  privileging_score: 2.3333333333333335
+  regex: \b(?:uninformed|not informed|informed)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+insist:
+  privileging_score: 5.0
+  regex: \b(?:insist|instits|insisting)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+inspiring:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:inspiring)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+involve:
+  privileging_score: 2.3333333333333335
+  regex: \b(?:)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+irritable:
+  privileging_score: 5.0
+  regex: \b(?:irritable)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+kind:
+  privileging_score: 1.3333333333333333
+  regex: \b(?:kind)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+knowledgable:
+  privileging_score: 2.6666666666666665
+  regex: \b(?:knowledgable)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+lazy:
+  privileging_score: 5.0
+  regex: \b(?:lazy)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+manage:
+  privileging_score: 2.3333333333333335
+  regex: \b(?:manage|managed|management|manages)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+motivated:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:unmotivated|motivated|not motivated|lack motivation|no motivation)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+noncooperative:
+  privileging_score: 5.0
+  regex: \b(?:noncooperative|uncooperative)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+pleasant:
+  privileging_score: 1.6666666666666667
+  regex: \b(?:unpleasant|not pleasant|pleasant)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+quotations:
+  privileging_score: 5.0
+  regex: "\\b(?:[\u201C\"\u2018\u2019\\']([^\u201C\"\u2018\u2019\\']+)[\u201D\"\u2018\
+    \u2019\\'])\\b"
+  stigmatizing_score: 1.5
+  valence: undefined
+report:
+  privileging_score: 5.0
+  regex: \b(?:reports|reporting|reportedly)\b
+  stigmatizing_score: 3.0
+  valence: undefined
+resist:
+  privileging_score: 5.0
+  regex: \b(?:resist|resisted|resistant|resists)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+say:
+  privileging_score: 5.0
+  regex: \b(?:says|saying)\b
+  stigmatizing_score: 2.25
+  valence: undefined
+sedentary:
+  privileging_score: 5.0
+  regex: \b(?:sedentary)\b
+  stigmatizing_score: 2.5
+  valence: undefined
+skilled:
+  privileging_score: 1.0
+  regex: \b(?:unskilled|skilled)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+support_system:
+  privileging_score: 2.6666666666666665
+  regex: \b(?:support_system)\b
+  stigmatizing_score: 5.0
+  valence: undefined
+supposedly:
+  privileging_score: 5.0
+  regex: \b(?:supposedly)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+tell:
+  privileging_score: 5.0
+  regex: \b(?:tells me|tells|told|telling me)\b
+  stigmatizing_score: 3.25
+  valence: undefined
+undisciplined:
+  privileging_score: 5.0
+  regex: \b(?:)\b
+  stigmatizing_score: 1.0
+  valence: undefined
+unkempt:
+  privileging_score: 5.0
+  regex: \b(?:unkempt)\b
+  stigmatizing_score: 1.5
+  valence: undefined
+unreliable:
+  privileging_score: 5.0
+  regex: \b(?:unreliable)\b
+  stigmatizing_score: 1.25
+  valence: undefined
+willing:
+  privileging_score: 2.0
+  regex: \b(?:willing|unwilling)\b
+  stigmatizing_score: 1.25
+  valence: undefined

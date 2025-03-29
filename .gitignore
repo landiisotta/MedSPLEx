@@ -1,3 +1,9 @@
 pipeline.ipynb
 dspy/
 .DS_Store
+data/annotated/manual-annotation/non-deid
+data/raw
+*/__pycache__/
+*egg-info/
+*ipynb_checkpoints*
+

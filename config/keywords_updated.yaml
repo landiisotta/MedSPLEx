@@ -1,0 +1,310 @@
+active:
+  privileging_score: 3
+  regex: \b(?:active|inactive)\b
+  stigmatizing_score: 2.6
+  valence: neutral
+adamant:
+  privileging_score: 2.8
+  regex: \b(?:adamant|adamantly)\b
+  stigmatizing_score: 5
+  valence: undefined
+adherence:
+  privileging_score: 3.3
+  regex: \b(?:nonadherent|non-adherent|adherent)\b
+  stigmatizing_score: 2.8
+  valence: neutral
+aggressive:
+  privileging_score: 5
+  regex: \baggressive\b
+  stigmatizing_score: 2
+  valence: ambiguous_stigmatizing
+agitated:
+  privileging_score: 5
+  regex: \bagitated\b
+  stigmatizing_score: 2.4
+  valence: ambiguous_stigmatizing
+angry:
+  privileging_score: 5
+  regex: \bangry\b
+  stigmatizing_score: 2
+  valence: stigmatizing
+anxious:
+  privileging_score: 5
+  regex: \b(?:anxious|anxiety)\b
+  stigmatizing_score: 2.8
+  valence: undefined
+apparently:
+  privileging_score: 5
+  regex: \bapparently\b
+  stigmatizing_score: 2.8
+  valence: undefined
+appears_to_be:
+  privileging_score: 5
+  regex: \bappears to be\b
+  stigmatizing_score: 3
+  valence: undefined
+argumentative:
+  privileging_score: 5
+  regex: \bargumentative\b
+  stigmatizing_score: 1
+  valence: stigmatizing
+believes:
+  privileging_score: 5
+  regex: \bbelieves\b
+  stigmatizing_score: 3
+  valence: undefined
+challenging:
+  privileging_score: 5
+  regex: \bchallenging\b
+  stigmatizing_score: 1.6
+  valence: ambiguous_stigmatizing
+charming:
+  privileging_score: 1
+  regex: \bcharming\b
+  stigmatizing_score: 5
+  valence: undefined
+claim:
+  regex: \b(?:claims|claiming)\b
+  privileging_score: 5
+  stigmatizing_score: 2.6
+  valence: undefined
+combative:
+  privileging_score: 5
+  regex: \bcombative\b
+  stigmatizing_score: 2
+  valence: ambiguous_stigmatizing
+complain:
+  privileging_score: 5
+  regex: \b(?:complains|complained|complaining)\b
+  stigmatizing_score: 3
+  valence: undefined
+compliant:
+  privileging_score: 2
+  regex: \b(?:compliant|noncompliant|noncompliance|poor compliance)\b
+  stigmatizing_score: 1.5
+  valence: ambiguous_bivalent
+confront:
+  privileging_score: 5
+  regex: \bconfront\b
+  stigmatizing_score: 1.6
+  valence: undefined
+cordial:
+  privileging_score: 1.6
+  regex: \bcordial\b
+  stigmatizing_score: 5
+  valence: undefined
+defensive:
+  privileging_score: 5
+  regex: \bdefensive\b
+  stigmatizing_score: 2
+  valence: undefined
+deny:
+  privileging_score: 5
+  regex: \b(?:denies|denied|denying|in denial)\b
+  stigmatizing_score: 1.4
+  valence: undefined
+difficult:
+  privileging_score: 5
+  regex: \bdifficult\b
+  stigmatizing_score: 1.4
+  valence: neutral
+dirty:
+  privileging_score: 5
+  regex: \bdirty\b
+  stigmatizing_score: 1.6
+  valence: neutral
+disciplined:
+  privileging_score: 1
+  regex: \b(?:disciplined|undisciplined)\b
+  stigmatizing_score: 1
+  valence: undefined
+dressed:
+  privileging_score: 1.6
+  regex: \b(?:appropriately dressed|well dressed)\b
+  stigmatizing_score: 5
+  valence: privileging
+educated:
+  privileging_score: 1.6
+  regex: \beducated\b
+  stigmatizing_score: 5
+  valence: neutral
+employed:
+  privileging_score: 3
+  regex: \bemployed\b
+  stigmatizing_score: 5
+  valence: neutral
+endorse:
+  privileging_score: 5
+  regex: \b(?:endorsing|endorsed|endorse)\b
+  stigmatizing_score: 3.4
+  valence: undefined
+engaged:
+  privileging_score: 2.3
+  regex: \b(?:engaged|engagement|engages)\b
+  stigmatizing_score: 5
+  valence: ambiguous_privileging
+exaggerate:
+  privileging_score: 5
+  regex: \bexaggerate\b
+  stigmatizing_score: 1.2
+  valence: undefined
+fail:
+  privileging_score: 5
+  regex: \bfail\b
+  stigmatizing_score: 1
+  valence: neutral
+friendly:
+  privileging_score: 1.3
+  regex: \bfriendly\b
+  stigmatizing_score: 5
+  valence: undefined
+good_insight:
+  privileging_score: 2.3
+  regex: \bgood insight\b
+  stigmatizing_score: 5
+  valence: privileging
+groomed:
+  privileging_score: 1.6
+  regex: \b(?:groomed| well groomed| appropriately groomed|ungroomed)\b
+  stigmatizing_score: 1.8
+  valence: ambiguous_privileging
+happy:
+  privileging_score: 1
+  regex: \bhappy\b
+  stigmatizing_score: 5
+  valence: ambiguous_bivalent
+healthy:
+  privileging_score: 2
+  regex: \bhealthy\b
+  stigmatizing_score: 5
+  valence: ambiguous_privileging
+hysterical:
+  privileging_score: 5
+  regex: \bhysterical\b
+  stigmatizing_score: 1.2
+  valence: stigmatizing
+informed:
+  privileging_score: 2.3
+  regex: \b(?:informed|uninformed)\b
+  stigmatizing_score: 1
+  valence: neutral
+insist:
+  privileging_score: 5
+  regex: \b(?:insist|insisting|insists)\b
+  stigmatizing_score: 2
+  valence: stigmatizing
+inspiring:
+  privileging_score: 1.6
+  regex: \binspiring\b
+  stigmatizing_score: 5
+  valence: neutral
+involved:
+  privileging_score: 2.3
+  regex: \b(?:involved|binvolvement)\b
+  stigmatizing_score: 5
+  valence: neutral
+irritable:
+  privileging_score: 5
+  regex: \birritable\b
+  stigmatizing_score: 2.2
+  valence: ambiguous_stigmatizing
+kind:
+  privileging_score: 1.3
+  regex: \bkind\b
+  stigmatizing_score: 5
+  valence: neutral
+knowledgeable:
+  privileging_score: 2.3
+  regex: \bknowledgeable\b
+  stigmatizing_score: 5
+  valence: privileging
+lazy:
+  privileging_score: 5
+  regex: \blazy\b
+  stigmatizing_score: 1
+  valence: neutral
+managed:
+  privileging_score: 2.3
+  regex: \b(?:managed|bmanagement|bmanages)\b
+  stigmatizing_score: 5
+  valence: neutral
+motivated:
+  privileging_score: 1.6
+  regex: \b(?:motivated|unmotivated)\b
+  stigmatizing_score: 1
+  valence: privileging
+noncooperative:
+  privileging_score: 5
+  regex: \b(?:noncooperative|not cooperate)\b
+  stigmatizing_score: 1.6
+  valence: undefined
+pleasant:
+  privileging_score: 1.6
+  regex: \b(?:pleasant|unpleasant)\b
+  stigmatizing_score: 1
+  valence: ambiguous
+quotations:
+  privileging_score: 5
+  regex: "\"[\\\\\"\u201C\u201D][^\"\\\\\"\u201C\u201D]+[\\\\\"\u201C\u201D]\""
+  stigmatizing_score: 1.4
+  valence: undefined
+refuse:
+  privileging_score: 5
+  regex: \b(?:refuse|refuses|refused)\b
+  stigmatizing_score: 2
+  valence: ambiguous_stigmatizing
+reports:
+  privileging_score: 5
+  regex: \b(?:reports|reporting|reportedly)\b
+  stigmatizing_score: 3
+  valence: undefined
+resist:
+  privileging_score: 5
+  regex: \bresist\b
+  stigmatizing_score: 1.6
+  valence: neutral
+say:
+  privileging_score: 5
+  regex: \b(?:says|saying)\b
+  stigmatizing_score: 2.4
+  valence: undefined
+sedentary:
+  privileging_score: 5
+  regex: \bsedentary\b
+  stigmatizing_score: 2.4
+  valence: undefined
+skilled:
+  privileging_score: 2.3
+  regex: \b(?:skilled|unskilled)\b
+  stigmatizing_score: 1.2
+  valence: neutral
+support_system:
+  privileging_score: 2.6
+  regex: \bsupport system\b
+  stigmatizing_score: 5
+  valence: privileging
+supposedly:
+  privileging_score: 5
+  regex: \bsupposedly\b
+  stigmatizing_score: 1
+  valence: stigmatizing
+tell:
+  privileging_score: 5
+  regex: \b(?:tells me|tells|told)\b
+  stigmatizing_score: 3.2
+  valence: undefined
+unkempt:
+  privileging_score: 5
+  regex: \bunkempt\b
+  stigmatizing_score: 2
+  valence: undefined
+unreliable:
+  privileging_score: 5
+  regex: \bunreliable\b
+  stigmatizing_score: 1.2
+  valence: neutral
+willing:
+  privileging_score: 2
+  regex: \b(?:willing|unwilling)\b
+  stigmatizing_score: 1.2
+  valence: ambiguous_bivalent
